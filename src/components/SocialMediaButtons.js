@@ -1,6 +1,7 @@
 // components/SocialMediaButtons.js
 import React from 'react';
 import { FaTwitter, FaInstagram, FaReddit } from 'react-icons/fa';
+import './SocialMediaButtons.css'
 
 const SocialMediaButtons = () => {
   const socialLinks = [
@@ -10,9 +11,9 @@ const SocialMediaButtons = () => {
   ];
 
   return (
-    <div className="social-buttons">
+    <div>
       {socialLinks.map((social, index) => (
-        <a key={index} href={social.link} target="_blank" rel="noopener noreferrer">
+        <a className="social-buttons" key={index} href={social.link} target="_blank" rel="noopener noreferrer">
           {social.icon}
         </a>
       ))}

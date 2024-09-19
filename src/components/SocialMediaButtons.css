@@ -1,0 +1,14 @@
+/* styles.css */
+
+.social-buttons {
+    color: black;
+    font-size: 50px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    margin: 20px;
+    border-radius: 25%;
+}
+
+.social-buttons:hover {
+    background-color: rgb(14, 134, 246);
+    font-size: 50px;
+}

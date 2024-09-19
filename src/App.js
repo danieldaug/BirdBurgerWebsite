@@ -12,7 +12,7 @@ function App() {
         <Logo />
         <TextSection 
           title="Welcome to BirdBurger Games" 
-          description="This is a basic React app with social media buttons and modular components." 
+          description="We are an indie development studio. Look out for our first game coming later this year." 
         />
         <SocialMediaButtons />
       </header>
