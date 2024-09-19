@@ -1,22 +1,20 @@
-import logo from './logo.svg';
+// App.js
+import React from 'react';
 import './App.css';
+import SocialMediaButtons from './components/SocialMediaButtons';
+import Logo from './components/MainLogo';
+import TextSection from './components/TextSection';
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <Logo />
+        <TextSection 
+          title="Welcome to BirdBurger Games" 
+          description="This is a basic React app with social media buttons and modular components." 
+        />
+        <SocialMediaButtons />
       </header>
     </div>
   );

@@ -1,0 +1,21 @@
+/* components/TextSection.css */
+
+.text-section {
+    font-family: 'American Typewriter', serif; /* Font style */
+    color: #333;                      /* Font color */
+    text-align: center;                /* Center-align the text */
+    margin: 20px 0;                    /* Vertical spacing */
+  }
+  
+  .text-section h1 {
+    font-family: 'American Typewriter', serif; /* Font style */
+    font-size: 2.5rem;                 /* Larger font size for the heading */
+    font-weight: bold;                 /* Bold the heading */
+    margin-bottom: 10px;
+  }
+  
+  .text-section p {
+    font-size: 1.2rem;                 /* Slightly larger font for the paragraph */
+    line-height: 1.5;                  /* Line height for better readability */
+    margin: 0;
+  }
