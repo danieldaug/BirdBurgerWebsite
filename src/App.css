@@ -11,6 +11,10 @@
   padding: 20px;
 }
 
+h1{
+  font-family: 'American Typewriter', serif;
+}
+
 .logo-container {
   margin-bottom: 20px;
 }
@@ -24,4 +28,8 @@
 
 .text-section {
   margin: 20px 0;
+}
+
+.Slider {
+  padding: 20px;
 }

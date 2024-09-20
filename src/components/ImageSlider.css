@@ -1,0 +1,70 @@
+.slider-container {
+    position: relative;
+    width: 100%;
+    max-width: 400px; /* Adjust as needed */
+    margin: auto;
+    text-align: center;
+}
+
+.slider-content {
+    width: 100%;
+    transition: opacity 0.3s ease-in-out; /* Smooth transition */
+}
+
+.fade-in {
+    opacity: 1;
+}
+
+.fade-out {
+    opacity: 0;
+    background-color: white; /* Fades to white */
+}
+
+.slider-image {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+.slider-description {
+    margin-top: 15px;
+    font-size: 16px;
+    color: #333;
+    font-family: 'American Typewriter', serif;
+}
+
+.left-arrow,
+.right-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: white;
+    border-radius: 50%;
+    font-size: 2rem; /* Adjust size for visibility */
+    cursor: pointer;
+    color: rgb(0, 0, 0); /* Change as needed */
+    padding-top: 8px;
+    transition: color 0.3s ease, border-color 0.3s ease;
+}
+
+.left-arrow:hover,
+.right-arrow:hover {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: white;
+    border-color: rgb(14, 134, 246);
+    border-radius: 50%;
+    font-size: 2rem; /* Adjust size for visibility */
+    cursor: pointer;
+    color: rgb(14, 134, 246); /* Change as needed */
+    padding-top: 8px;
+}
+
+.left-arrow {
+    left: 10px; /* Position over the left side of the image */
+}
+
+.right-arrow {
+    right: 10px; /* Position over the right side of the image */
+}

@@ -3,7 +3,7 @@
 .social-buttons {
     color: black;
     font-size: 50px;
-    transition: color 1s ease, fill 1s ease;;
+    transition: color 0.3s ease, fill 0.3s ease;;
     margin: 20px;
     border-radius: 25%;
     display: inline-block;
@@ -15,6 +15,15 @@
     font-size: 50px;
 }
 
+.social-buttons svg path {
+    color: black;
+    font-size: 50px;
+    transition: color 0.3s ease, fill 0.3s ease;;
+    margin: 20px;
+    border-radius: 25%;
+    display: inline-block;
+}
+
 .social-buttons:hover svg path {
-    fill: rgb(14, 134, 246); /* Targeting SVG path for custom TikTok icon */
+    fill: rgb(14, 134, 246);
 }
