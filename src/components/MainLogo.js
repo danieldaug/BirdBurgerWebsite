@@ -1,6 +1,6 @@
 // components/Logo.js
 import React from 'react';
-import logo from '../assets/img/main_logo.png';
+import logo from '../assets/img/icon_logo.png';
 
 const MainLogo = () => {
   return (
