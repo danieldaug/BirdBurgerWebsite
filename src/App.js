@@ -32,7 +32,8 @@ const productData = [
 const teamData = [
   {
       imageUrl: DaugProfile,
-      description: 'Co-founder, Developer, Artist | University of San Diego \'25',
+      description: 'Co-founder | Developer | Artist',
+      school: 'University of San Diego \'25',
       header: 'Daniel Daugbjerg',
       linkedin: 'https://www.linkedin.com/in/daniel-daugbjerg-852a26282/',
       ig: 'https://www.instagram.com/daniel.daug/',
@@ -40,7 +41,8 @@ const teamData = [
   },
   {
       imageUrl: BirdProfile,
-      description: 'Co-founder, Developer | Rensselaer Polytechnic Institute \'25',
+      description: 'Co-founder | Developer',
+      school: 'Rensselaer Polytechnic Institute \'25',
       header: 'Thomas Bird',
       linkedin: 'https://www.linkedin.com/in/tommycbird/',
       ig: 'https://www.instagram.com/tommycbird/',

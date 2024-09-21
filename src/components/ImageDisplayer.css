@@ -1,33 +1,56 @@
 /* ImageDisplayer.css */
 
 .display-container {
-    width: 400px;
-    margin: auto;
-    text-align: center;
-}
-
-.display-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     width: 100%;
+    padding: 20px;
+  }
+  
+  .display-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1000px; /* Adjust width as needed */
+    margin-bottom: 20px;
     transition: opacity 0.3s ease-in-out; /* Smooth transition */
-    text-align: center;
-}
-
-.display-image {
+  }
+  
+  .image-section {
+    flex: 1;
+    margin-right: 20px;
+  }
+  
+  .text-section-display {
+    flex: 1;
+    text-align: right;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+  
+  .display-image {
     width: 100%;
-    height: auto;
-    object-fit: contain;
-}
-
-.display-description {
-    margin-top: 15px;
-    font-size: 16px;
-    color: #333;
-    font-family: 'American Typewriter', serif;
-}
-
-.display-header {
+    height: 400px; /* Set a fixed height */
+    object-fit: cover;
+    border-radius: 20px;
+  }
+  
+  .display-header {
     margin-top: 5px;
-    font-size: 32px;
+    font-size: 38px;
     color: #333;
     font-family: 'American Typewriter', serif;
-}
+  }
+  
+  .display-description {
+    margin-top: 15px;
+    font-size: 20px;
+    color: #333;
+    font-family: 'American Typewriter', serif;
+  }
+  

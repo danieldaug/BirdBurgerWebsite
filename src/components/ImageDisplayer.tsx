@@ -7,6 +7,7 @@ import './SocialMediaButtons.css';
 interface Image {
   imageUrl: string;
   description: string;
+  school?: string;
   header?: string;
   ig?: string;
   linkedin?: string;
@@ -21,25 +22,19 @@ const ImageDisplayer: React.FC<ImageDisplayerProps> = ({ images }) => {
   return (
     <div className="display-container">
       {images.map((image, index) => (
-        <div className="display-content" key={index} style={{ marginBottom: '20px', display: 'flex' }}>
-          <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'flex-start' }}>
+        <div className="display-content" key={index}>
+          <div className="image-section">
             <img
               src={image.imageUrl}
               alt={image.description}
               className="display-image"
-              style={{
-                borderRadius: '20px',
-                marginRight: '20px',
-                width: '400px',  // Set a fixed width
-                height: '400px', // Set a fixed height
-                objectFit: 'cover' // Maintain aspect ratio and cover the box
-              }}
             />
           </div>
-          <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'flex-end' }}>
-            {image.header && <h1 className="display-header" style={{ textAlign: 'right' }}>{image.header}</h1>}
-            <p className="display-description" style={{ textAlign: 'right' }}>{image.description}</p>
-            <div style={{ display: 'flex', alignItems: 'flex-end', gap: '10px' }}>
+          <div className="text-section-display">
+            {image.header && <h1 className="display-header">{image.header}</h1>}
+            <p className="display-description">{image.description}</p>
+            <p className="display-description">{image.school}</p>
+            <div className="social-media-buttons">
               {image.linkedin && (
                 <a className="social-buttons-small" key={`linkedin-${index}`} href={image.linkedin} target="_blank" rel="noopener noreferrer">
                   <FaLinkedin />
