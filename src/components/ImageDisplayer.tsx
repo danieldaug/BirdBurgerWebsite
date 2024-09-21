@@ -1,3 +1,4 @@
+// components/ImageDisplayer.tsx
 import React from 'react';
 import './ImageDisplayer.css';
 import { FaLinkedin, FaInstagram, FaGithub } from 'react-icons/fa';

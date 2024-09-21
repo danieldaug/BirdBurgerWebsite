@@ -6,6 +6,7 @@ import Logo from './components/MainLogo.tsx';
 import TextSection from './components/TextSection.tsx';
 import ImageSlider from './components/ImageSlider.tsx';
 import ImageDisplayer from './components/ImageDisplayer.tsx';
+import Divider from './components/Divider.tsx';
 import DDIcon from './assets/img/DDIcon.png';
 import DaugProfile from './assets/img/daugbjerg_profile.png';
 import BirdProfile from './assets/img/bird_profile.jpg';
@@ -31,7 +32,7 @@ const productData = [
 const teamData = [
   {
       imageUrl: DaugProfile,
-      description: 'Co-founder, Developer, Artist',
+      description: 'Co-founder, Developer, Artist | University of San Diego \'25',
       header: 'Daniel Daugbjerg',
       linkedin: 'https://www.linkedin.com/in/daniel-daugbjerg-852a26282/',
       ig: 'https://www.instagram.com/daniel.daug/',
@@ -39,7 +40,7 @@ const teamData = [
   },
   {
       imageUrl: BirdProfile,
-      description: 'Co-founder, Developer',
+      description: 'Co-founder, Developer | Rensselaer Polytechnic Institute \'25',
       header: 'Thomas Bird',
       linkedin: 'https://www.linkedin.com/in/tommycbird/',
       ig: 'https://www.instagram.com/tommycbird/',
@@ -57,15 +58,18 @@ function App() {
     <div className="App">
       <header className="App-header">
         <Logo />
+        <Divider color="#000" thickness="5px" width="80%"/>
         <TextSection 
           title="Welcome to BirdBurger Games" 
-          description="We are an indie development studio. Look out for our first mobile game, Daily Disc, coming later this year." 
+          description="We are an indie development studio. Check out our socials and look out for our first mobile game, Daily Disc, coming later this year!" 
         />
         <SocialMediaButtons />
+        <Divider color="#000" thickness="5px" width="80%"/>
         <div className="Slider">
           <h1>Products</h1>
           <ImageSlider images={productData} />
         </div>
+        <Divider color="#000" thickness="5px" width="80%"/>
         <div className="Slider">
           <h1>Meet The Team</h1>
           <ImageDisplayer images={teamData} />

@@ -18,4 +18,6 @@
     font-size: 1.2rem;                 /* Slightly larger font for the paragraph */
     line-height: 1.5;                  /* Line height for better readability */
     margin: 0;
+    max-width: 750px;
+    text-align: center; 
   }
