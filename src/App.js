@@ -4,7 +4,7 @@ import './App.css';
 import SocialMediaButtons from './components/SocialMediaButtons.tsx';
 import Logo from './components/MainLogo.tsx';
 import TextSection from './components/TextSection.tsx';
-import ImageSlider from './components/ImageSlider.tsx';
+import ImageSlideshow from './components/ImageSlideshow.tsx';
 import ImageDisplayer from './components/ImageDisplayer.tsx';
 import Divider from './components/Divider.tsx';
 import DDIcon from './assets/img/DDIcon.png';
@@ -69,7 +69,7 @@ function App() {
         <Divider color="#000" thickness="5px" width="80%"/>
         <div className="Slider">
           <h1>Products</h1>
-          <ImageSlider images={productData} />
+          <ImageSlideshow images={productData} />
         </div>
         <Divider color="#000" thickness="5px" width="80%"/>
         <div className="Slider">

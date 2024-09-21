@@ -1,7 +1,7 @@
-// components/ImageSlider.tsx
+// components/ImageSlideshow.tsx
 import React, { useState } from 'react';
 import { FaArrowLeft, FaArrowRight } from 'react-icons/fa';
-import './ImageSlider.css';
+import './ImageSlideshow.css';
 
 interface Image {
   imageUrl: string;
@@ -13,7 +13,7 @@ interface ImageSliderProps {
   images: Image[];
 }
 
-const ImageSlider: React.FC<ImageSliderProps> = ({ images }) => {
+const ImageSlideshow: React.FC<ImageSliderProps> = ({ images }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [fadeOut, setFadeOut] = useState(false);
 
@@ -63,4 +63,4 @@ const ImageSlider: React.FC<ImageSliderProps> = ({ images }) => {
   );
 };
 
-export default ImageSlider;
+export default ImageSlideshow;
