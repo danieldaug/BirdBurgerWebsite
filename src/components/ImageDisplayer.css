@@ -1,7 +1,6 @@
 /* ImageDisplayer.css */
 
 .display-container {
-    position: relative;
     width: 400px;
     margin: auto;
     text-align: center;
@@ -10,6 +9,7 @@
 .display-content {
     width: 100%;
     transition: opacity 0.3s ease-in-out; /* Smooth transition */
+    text-align: center;
 }
 
 .display-image {

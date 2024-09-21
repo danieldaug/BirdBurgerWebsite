@@ -27,3 +27,17 @@
 .social-buttons:hover svg path {
     fill: rgb(14, 134, 246);
 }
+
+.social-buttons-small {
+    color: black;
+    font-size: 35px;
+    transition: color 0.3s ease, fill 0.3s ease;;
+    margin: 10px;
+    border-radius: 25%;
+    display: inline-block;
+}
+
+.social-buttons-small:hover {
+    color: rgb(14, 134, 246);
+    fill: rgb(14, 134, 246) ;
+}
