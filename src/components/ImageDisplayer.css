@@ -1,0 +1,33 @@
+/* ImageDisplayer.css */
+
+.display-container {
+    position: relative;
+    width: 400px;
+    margin: auto;
+    text-align: center;
+}
+
+.display-content {
+    width: 100%;
+    transition: opacity 0.3s ease-in-out; /* Smooth transition */
+}
+
+.display-image {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+.display-description {
+    margin-top: 15px;
+    font-size: 16px;
+    color: #333;
+    font-family: 'American Typewriter', serif;
+}
+
+.display-header {
+    margin-top: 5px;
+    font-size: 32px;
+    color: #333;
+    font-family: 'American Typewriter', serif;
+}

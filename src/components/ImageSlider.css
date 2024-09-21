@@ -1,7 +1,8 @@
+/* ImageSlider.css */
+
 .slider-container {
     position: relative;
-    width: 100%;
-    max-width: 400px; /* Adjust as needed */
+    width: 400px;
     margin: auto;
     text-align: center;
 }
@@ -33,13 +34,20 @@
     font-family: 'American Typewriter', serif;
 }
 
+.slider-header {
+    margin-top: 5px;
+    font-size: 32px;
+    color: #333;
+    font-family: 'American Typewriter', serif;
+}
+
 .left-arrow,
 .right-arrow {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
     background-color: white;
-    border-radius: 50%;
+    border-radius: 25%;
     font-size: 2rem; /* Adjust size for visibility */
     cursor: pointer;
     color: rgb(0, 0, 0); /* Change as needed */
@@ -54,7 +62,7 @@
     transform: translateY(-50%);
     background-color: white;
     border-color: rgb(14, 134, 246);
-    border-radius: 50%;
+    border-radius: 25%;
     font-size: 2rem; /* Adjust size for visibility */
     cursor: pointer;
     color: rgb(14, 134, 246); /* Change as needed */

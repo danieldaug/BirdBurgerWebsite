@@ -1,10 +1,10 @@
-/* components/TextSection.css */
+/* TextSection.css */
 
 .text-section {
     font-family: 'American Typewriter', serif; /* Font style */
     color: #333;                      /* Font color */
     text-align: center;                /* Center-align the text */
-    margin: 20px 0;                    /* Vertical spacing */
+    margin: 0 0;                    /* Vertical spacing */
   }
   
   .text-section h1 {

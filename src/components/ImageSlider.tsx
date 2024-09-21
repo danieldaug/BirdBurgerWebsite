@@ -6,6 +6,7 @@ import './ImageSlider.css';
 interface Image {
   imageUrl: string;
   description: string;
+  header?: string;
 }
 
 interface ImageSliderProps {
@@ -39,7 +40,9 @@ const ImageSlider: React.FC<ImageSliderProps> = ({ images }) => {
           src={images[currentIndex].imageUrl}
           alt={images[currentIndex].description}
           className="slider-image"
+          style={{ borderRadius: '20px' }}
         />
+        <h1 className='slider-header'>{images[currentIndex].header}</h1>
         <p className="slider-description">{images[currentIndex].description}</p>
       </div>
 
