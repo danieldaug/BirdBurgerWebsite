@@ -1,15 +1,20 @@
-// components/SocialMediaButtons.js
+// components/SocialMediaButtons.tsx
 import React from 'react';
 import { FaTwitter, FaInstagram, FaReddit } from 'react-icons/fa';
-import TiktokIcon from './TiktokLogo.js';
+import TiktokIcon from './TiktokLogo.tsx';
 import './SocialMediaButtons.css';
 
-const SocialMediaButtons = () => {
-  const socialLinks = [
+interface SocialLink {
+  icon: JSX.Element;
+  link: string;
+}
+
+const SocialMediaButtons: React.FC = () => {
+  const socialLinks: SocialLink[] = [
     { icon: <FaReddit />, link: 'https://www.reddit.com/user/DapperClassic6977/' },
     { icon: <FaTwitter />, link: 'https://x.com/BirdBurgerGames' },
-    { icon: <FaInstagram />, link: 'https://instagram.com' },
-    { icon: <TiktokIcon />, link: 'https://www.tiktok.com/@birdburgergames?lang=en'},
+    { icon: <FaInstagram />, link: 'https://www.instagram.com/birdburgergames/' },
+    { icon: <TiktokIcon />, link: 'https://www.tiktok.com/@birdburgergames?lang=en' },
   ];
 
   return (

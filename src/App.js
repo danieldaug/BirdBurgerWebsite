@@ -1,10 +1,10 @@
 // App.js
 import React from 'react';
 import './App.css';
-import SocialMediaButtons from './components/SocialMediaButtons';
-import Logo from './components/MainLogo';
-import TextSection from './components/TextSection';
-import ImageSlider from './components/ImageSlider';
+import SocialMediaButtons from './components/SocialMediaButtons.tsx';
+import Logo from './components/MainLogo.tsx';
+import TextSection from './components/TextSection.tsx';
+import ImageSlider from './components/ImageSlider.tsx';
 import DDIcon from './assets/img/DDIcon.png'
 import main_logo from './assets/img/main_logo.png';
 

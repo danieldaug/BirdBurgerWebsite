@@ -1,9 +1,13 @@
-// components/TextSection.js
+// components/TextSection.tsx
 import './TextSection.css';
-
 import React from 'react';
 
-const TextSection = ({ title, description }) => {
+interface TextSectionProps {
+  title: string;
+  description: string;
+}
+
+const TextSection: React.FC<TextSectionProps> = ({ title, description }) => {
   return (
     <div className="text-section">
       <h1>{title}</h1>
