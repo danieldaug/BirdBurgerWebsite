@@ -27,7 +27,7 @@ const IconButtonDropdown: React.FC<IconButtonDropdownProps> = ({ menuItems }) =>
   return (
     <div className="icon-button-container">
       <button className="icon-button" onClick={toggleDropdown}>
-        <FaBars size={24} />
+        <FaBars size={32} />
       </button>
       <div className={`dropdown-menu ${isOpen ? 'open' : ''}`}>
         {menuItems.map((item, index) => (
