@@ -1,5 +1,9 @@
 /* App.css */
 
+body {
+  background: url('https://www.transparenttextures.com/patterns/gplay.png'); 
+}
+
 .App {
   text-align: center;
 }

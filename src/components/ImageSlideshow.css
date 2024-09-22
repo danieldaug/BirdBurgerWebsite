@@ -30,16 +30,19 @@
   .slider-text {
     flex: 1;
     padding: 0 20px;
+    font-family: 'American Typewriter', serif;
   }
   
   .slider-header {
     font-size: 2rem;
     margin-bottom: 10px;
+    font-family: 'American Typewriter', serif;
   }
   
   .slider-description {
     font-size: 1.2rem;
     line-height: 1.5;
+    font-family: 'American Typewriter', serif;
   }
   
   /* Fade transitions */
