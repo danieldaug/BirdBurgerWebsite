@@ -10,7 +10,7 @@ import Divider from './components/Divider.tsx';
 import IconButtonDropdown from './components/IconButtonDropdown.tsx';
 import DDIcon from './assets/img/DDIcon.png';
 import DaugProfile from './assets/img/daugbjerg_profile.png';
-import BirdProfile from './assets/img/bird_profile.jpg';
+import BirdProfile from './assets/img/bird_profile.png';
 import main_logo from './assets/img/main_logo.png';
 
 // Locations for the user to change view to
