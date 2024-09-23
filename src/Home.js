@@ -6,10 +6,12 @@ import ImageSlideshow from './components/ImageSlideshow.tsx';
 import ImageDisplayer from './components/ImageDisplayer.tsx';
 import Divider from './components/Divider.tsx';
 import IconButtonDropdown from './components/IconButtonDropdown.tsx';
+import Footer from './components/Footer.tsx';
 import DDIcon from './assets/img/DDIcon.png';
 import DaugProfile from './assets/img/daugbjerg_profile.png';
 import BirdProfile from './assets/img/bird_profile.png';
 import main_logo from './assets/img/main_logo.png';
+import wing_logo from './assets/img/buffalo-wing.png';
 import './App.css'
 
 // Locations for the user to change view to
@@ -58,7 +60,7 @@ const teamData = [
       git: 'https://github.com/tommycbird',
   },
   {
-      imageUrl: main_logo,
+      imageUrl: DDIcon,
       description: 'Other members to be added',
       header: 'Other Members',
   },
@@ -80,7 +82,7 @@ const Home = () => {
   return (
     <div className="App" id="home-section">
         <IconButtonDropdown menuItems={menuItems} />
-        <header className="App-header">
+        <div className="App-header">
             <TextSection 
             title="Welcome to BirdBurger Games" 
             description="We are an indie development studio. Check out our socials and look out for our first mobile game, Daily Disc, coming later this year!" 
@@ -94,11 +96,17 @@ const Home = () => {
             </div>
             <div id="team-section"></div>
             <Divider color="#000" thickness="5px" width="80%"/>
+            <TextSection 
+            title="Meet The Team" 
+            description="This studio is based in the US and was brought about by two college students whose love for video games and creativity has led them to spending their free-time as indie game developers. Through development, they have partnered up with other individuals for soundtracks and marketing." 
+            />
             <div className="Slider">
-            <h1>Meet The Team</h1>
             <ImageDisplayer images={teamData} />
             </div>
-        </header>
+        </div>
+        <div>
+            <Footer logo={wing_logo}/>
+        </div>
         </div>
         );
     };

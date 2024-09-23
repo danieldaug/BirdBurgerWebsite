@@ -1,16 +1,38 @@
 /* Banner.css */
+@import url('https://fonts.googleapis.com/css2?family=Playpen+Sans:wght@100..800&display=swap');
+
 .banner-container {
     width: 100%;
-    /*height: 200px;  Adjust the height of the banner as needed */
     position: fixed; /* Keeps the banner fixed at the top */
     top: 0;
     left: 0;
     z-index: 1000; /* Make sure the banner stays on top */
   }
   
-  .banner-image {
-    width: 100%; /* Span the image across the full width */
-    height: 100%; /* Make the image fit the banner height */
-    object-fit: cover; /* Ensures the image covers the entire area without distortion */
-  }
+.banner-image {
+  width: 100%; /* Span the image across the full width */
+  height: 100%; /* Make the image fit the banner height */
+  object-fit: cover; /* Ensures the image covers the entire area without distortion */
+}
+
+.banner-text {
+  top: 0;
+  left: 10px;
+  position: fixed;
+}
+
+#birdburger-text {
+  top: 0;
+  margin-top: 3px;
+  color: white;
+  text-shadow: 
+        -2px -2px 0px black,  /* Top left shadow */
+        2px -2px 0px black,   /* Top right shadow */
+        -2px 2px 0px black,   /* Bottom left shadow */
+        2px 2px 0px black,    /* Bottom right shadow */
+        -2px 0px 0px black,   /* Left shadow */
+        2px 0px 0px black,    /* Right shadow */
+        0px -2px 0px black,   /* Top shadow */
+        0px 2px 0px black;    /* Bottom shadow */
+}
   

@@ -1,0 +1,45 @@
+/* Footer.css */
+@import url('https://fonts.googleapis.com/css2?family=Playpen+Sans:wght@100..800&display=swap');
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: rgb(14, 134, 246); /* Light grey background */
+    border-top: 8px solid #000000; /* Optional border at the top */
+}
+
+.footer-logo {
+    height: 150px; /* Adjust the logo size */
+    margin: 0;
+    padding: 0;
+}
+
+.footer-right {
+    text-align: right;
+    top: 0;
+    flex: 2; /* Allow text and contact section to take more space */
+}
+
+.footer-text {
+    margin-bottom: 10px;
+    font-size: 18px;
+    color: #ffffff;
+    font-family: 'Playpen Sans', sans-serif;
+}
+
+.contact-us h3 {
+    margin-bottom: 5px;
+    font-size: 24px;
+    font-weight: bold;
+    color: #ffffff;
+    font-family: 'Playpen Sans', sans-serif;
+}
+
+.contact-us p {
+    margin: 0;
+    font-size: 18px;
+    color: #ffffff;
+    font-family: 'Playpen Sans', sans-serif;
+}

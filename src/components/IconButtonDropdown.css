@@ -1,4 +1,6 @@
 /* IconButtonDropdown.css */
+@import url('https://fonts.googleapis.com/css2?family=Playpen+Sans:wght@100..800&display=swap');
+
 .icon-button-container {
     position: fixed;
     top: 5px;
@@ -49,7 +51,7 @@
     cursor: pointer;
     border-bottom: 1px solid #000000;
     transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
-    font-family: 'American Typewriter', serif;
+    font-family: 'Playpen Sans', sans-serif;
     font-weight: 700;
   }
   

@@ -3,6 +3,8 @@ import { useLocation } from 'react-router-dom';
 import Banner from './components/Banner.tsx';
 import IconButtonDropdown from './components/IconButtonDropdown.tsx';
 import TextSection from './components/TextSection.tsx';
+import Footer from './components/Footer.tsx';
+import wing_logo from './assets/img/buffalo-wing.png';
 
 // Locations for the user to change view to
 const menuItems = [
@@ -34,6 +36,9 @@ const BlogPage = () => {
             description="Check out updates, information, and documentation throughout our development journey!" 
         />
       </header>
+    <div>
+      <Footer logo={wing_logo}/>
+    </div>
     </div>
   );
 };

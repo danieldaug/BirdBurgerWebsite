@@ -1,4 +1,5 @@
 /* ImageDisplayer.css */
+@import url('https://fonts.googleapis.com/css2?family=Playpen+Sans:wght@100..800&display=swap');
 
 .display-container {
     display: flex;
@@ -44,13 +45,13 @@
     margin-top: 5px;
     font-size: 38px;
     color: #333;
-    font-family: 'American Typewriter', serif;
+    font-family: 'Playpen Sans', sans-serif;
   }
   
   .display-description {
     margin-top: 15px;
     font-size: 20px;
     color: #333;
-    font-family: 'American Typewriter', serif;
+    font-family: 'Playpen Sans', sans-serif;
   }
   

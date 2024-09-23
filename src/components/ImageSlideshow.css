@@ -1,4 +1,6 @@
 /* ImageSlideshow.css */
+@import url('https://fonts.googleapis.com/css2?family=Playpen+Sans:wght@100..800&display=swap');
+
 .slider-container {
     position: relative;
     display: flex;
@@ -31,19 +33,19 @@
   .slider-text {
     flex: 1;
     padding: 0 20px;
-    font-family: 'American Typewriter', serif;
+    font-family: 'Playpen Sans', sans-serif;
   }
   
   .slider-header {
     font-size: 2rem;
     margin-bottom: 10px;
-    font-family: 'American Typewriter', serif;
+    font-family: 'Playpen Sans', sans-serif;
   }
   
   .slider-description {
     font-size: 1.2rem;
     line-height: 1.5;
-    font-family: 'American Typewriter', serif;
+    font-family: 'Playpen Sans', sans-serif;
   }
   
   /* Fade transitions */
