@@ -10,7 +10,7 @@ import wing_logo from './assets/img/buffalo-wing.png';
 const menuItems = [
     { name: 'Home', link: '/#home-section' },
     { name: 'Products', link: '/#product-section' },
-    { name: 'Team', link: '/#team-section' },
+    { name: 'Team', link: '/team' },
     { name: 'Blog', link: '/blogs'},
   ];
 

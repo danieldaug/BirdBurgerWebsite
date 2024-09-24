@@ -21,6 +21,12 @@
   position: fixed;
 }
 
+.banner-socials {
+  top: 0;
+  right: 130px;
+  position: fixed;
+}
+
 #birdburger-text {
   top: 0;
   margin-top: 3px;

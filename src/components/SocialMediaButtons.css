@@ -1,35 +1,43 @@
 /* styles.css */
 
 .social-buttons {
-    color: black;
-    font-size: 50px;
-    transition: color 0.3s ease, fill 0.3s ease;;
-    margin: 20px;
+    color: rgb(255, 255, 255);
+    font-size: 40px;
+    transition: color 0.3s ease-in-out, fill 0.3s ease-in-out;
+    margin: 23px;
     border-radius: 25%;
     display: inline-block;
+    transition-duration: 0.3s;
 }
 
 .social-buttons:hover {
-    color: rgb(14, 134, 246);
-    fill: rgb(14, 134, 246) ;
-    font-size: 50px;
+    color: rgb(0, 0, 0);
+    fill: rgb(0, 0, 0) ;
+    font-size: 40px;
 }
 
-.social-buttons svg path {
-    color: black;
-    font-size: 50px;
-    transition: color 0.3s ease, fill 0.3s ease;;
-    margin: 20px;
+.social-buttons svg {
+    color: rgb(255, 255, 255);
+    fill: rgb(255, 255, 255);
+    transition: fill 0.3s ease-in-out;
+    margin: 0px;
     border-radius: 25%;
     display: inline-block;
 }
 
-.social-buttons:hover svg path {
-    fill: rgb(14, 134, 246);
+.social-buttons.tiktok-logo svg {
+    padding-top: 0;
+    margin-top: 0;
+    width: 40px; 
+    height: 40px;
+}
+
+.social-buttons:hover svg {
+    fill: rgb(0, 0, 0);
 }
 
 .social-buttons-small {
-    color: black;
+    color: rgb(0, 0, 0);
     font-size: 35px;
     transition: color 0.3s ease, fill 0.3s ease;;
     margin: 10px;
