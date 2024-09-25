@@ -10,13 +10,13 @@ import DDIcon from './assets/img/DDIcon.png';
 import DaugProfile from './assets/img/daugbjerg_profile.png';
 import BirdProfile from './assets/img/bird_profile.png';
 import wing_logo from './assets/img/buffalo-wing.png';
+import './App.css';
 
 // Locations for the user to change view to
 const menuItems = [
-    { name: 'Home', link: '/#home-section' },
-    { name: 'Products', link: '/#product-section' },
+    { name: 'Blog', link: '/' },
+    { name: 'Products', link: '/products' },
     { name: 'Team', link: '/team' },
-    { name: 'Blog', link: '/blogs'},
   ];
 
 // Team Members
@@ -46,7 +46,7 @@ const teamData = [
     },
   ];
 
-const BlogPage = () => {
+const Team = () => {
     const location = useLocation();
 
     useEffect(() => {
@@ -79,4 +79,4 @@ const BlogPage = () => {
   );
 };
 
-export default BlogPage;
+export default Team;
