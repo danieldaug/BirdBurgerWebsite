@@ -1,4 +1,3 @@
-// components/ImageDisplayer.tsx
 import React from 'react';
 import './ImageDisplayer.css';
 import { FaLinkedin, FaInstagram, FaGithub } from 'react-icons/fa';
@@ -29,27 +28,27 @@ const ImageDisplayer: React.FC<ImageDisplayerProps> = ({ images }) => {
               alt={image.description}
               className="display-image"
             />
-          </div>
-          <div className="text-section-display">
-            {image.header && <h1 className="display-header">{image.header}</h1>}
-            <p className="display-description">{image.description}</p>
-            <p className="display-description">{image.school}</p>
-            <div className="social-media-buttons">
-              {image.linkedin && (
-                <a className="social-buttons-small" key={`linkedin-${index}`} href={image.linkedin} target="_blank" rel="noopener noreferrer">
-                  <FaLinkedin />
-                </a>
-              )}
-              {image.ig && (
-                <a className="social-buttons-small" key={`instagram-${index}`} href={image.ig} target="_blank" rel="noopener noreferrer">
-                  <FaInstagram />
-                </a>
-              )}
-              {image.git && (
-                <a className="social-buttons-small" key={`github-${index}`} href={image.git} target="_blank" rel="noopener noreferrer">
-                  <FaGithub />
-                </a>
-              )}
+            <div className="text-section-display">
+              {image.header && <h1 className="display-header">{image.header}</h1>}
+              <p className="display-description">{image.description}</p>
+              {image.school && <p className="display-description">{image.school}</p>}
+              <div className="social-media-buttons">
+                {image.linkedin && (
+                  <a className="social-buttons-small" href={image.linkedin} target="_blank" rel="noopener noreferrer">
+                    <FaLinkedin />
+                  </a>
+                )}
+                {image.ig && (
+                  <a className="social-buttons-small" href={image.ig} target="_blank" rel="noopener noreferrer">
+                    <FaInstagram />
+                  </a>
+                )}
+                {image.git && (
+                  <a className="social-buttons-small" href={image.git} target="_blank" rel="noopener noreferrer">
+                    <FaGithub />
+                  </a>
+                )}
+              </div>
             </div>
           </div>
         </div>
