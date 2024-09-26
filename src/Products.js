@@ -3,6 +3,7 @@ import { useLocation } from 'react-router-dom';
 import Banner from './components/Banner.tsx';
 import IconButtonDropdown from './components/IconButtonDropdown.tsx';
 import ImageSlideshow from './components/ImageSlideshow.tsx';
+import ImageDisplayer from './components/ImageDisplayer.tsx';
 import Footer from './components/Footer.tsx';
 import DDIcon from './assets/img/DDIcon.png';
 import wing_logo from './assets/img/buffalo-wing.png';
@@ -24,12 +25,8 @@ const productData = [
         description: 'Our first mobile game to be released in the near future. Look out for Daily Disc on the IOS App Store!',
     },
     {
-        imageUrl: main_logo,
-        description: 'This is the second image',
-    },
-    {
-        imageUrl: DDIcon,
-        description: 'This is the third image',
+        imageUrl: wing_logo,
+        description: 'Expect more products soon...',
     },
   ];
 
@@ -52,7 +49,7 @@ const Products = () => {
         <header className="App-header">
         <div className="Slider">
             <h1>Products</h1>
-            <ImageSlideshow images={productData} />
+              <ImageDisplayer images={productData} />
             </div>
       </header>
     <div>
