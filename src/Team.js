@@ -6,7 +6,7 @@ import ImageDisplayer from './components/ImageDisplayer.tsx';
 import Divider from './components/Divider.tsx';
 import TextSection from './components/TextSection.tsx';
 import Footer from './components/Footer.tsx';
-import DDIcon from './assets/img/DDIcon.png';
+import AndersonProfile from './assets/img/anderson_profile.JPG';
 import DaugProfile from './assets/img/daugbjerg_profile.png';
 import BirdProfile from './assets/img/bird_profile.png';
 import wing_logo from './assets/img/buffalo-wing.png';
@@ -23,7 +23,7 @@ const menuItems = [
 const teamData = [
     {
         imageUrl: DaugProfile,
-        description: 'Co-founder | Developer | Artist',
+        description: 'Co-founder | Developer | Visual Artist',
         school: 'University of San Diego \'25',
         header: 'Daniel Daugbjerg',
         linkedin: 'https://www.linkedin.com/in/daniel-daugbjerg-852a26282/',
@@ -40,9 +40,12 @@ const teamData = [
         git: 'https://github.com/tommycbird',
     },
     {
-        imageUrl: DDIcon,
-        description: 'Other members to be added',
-        header: 'Other Members',
+        imageUrl: AndersonProfile,
+        description: 'Musician',
+        school: '',
+        header: 'Kevin Anderson',
+        ig: 'https://www.instagram.com/zizzerzazzerzuz4323/',
+        other: 'https://linktr.ee/KevinAnd',
     },
   ];
 

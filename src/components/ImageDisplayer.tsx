@@ -1,6 +1,6 @@
 import React from 'react';
 import './ImageDisplayer.css';
-import { FaLinkedin, FaInstagram, FaGithub } from 'react-icons/fa';
+import { FaLinkedin, FaInstagram, FaGithub, FaLink } from 'react-icons/fa';
 import './SocialMediaButtons.css';
 
 interface Image {
@@ -11,6 +11,7 @@ interface Image {
   ig?: string;
   linkedin?: string;
   git?: string;
+  other?: string;
 }
 
 interface ImageDisplayerProps {
@@ -26,7 +27,7 @@ const ImageDisplayer: React.FC<ImageDisplayerProps> = ({ images }) => {
             <img
               src={image.imageUrl}
               alt={image.description}
-              className="display-image"
+              className={`display-image ${image.header === 'Kevin Anderson' ? 'shift-crop' : ''}`}
             />
             <div className="text-section-display">
               {image.header && <h1 className="display-header">{image.header}</h1>}
@@ -46,6 +47,11 @@ const ImageDisplayer: React.FC<ImageDisplayerProps> = ({ images }) => {
                 {image.git && (
                   <a className="social-buttons-small" href={image.git} target="_blank" rel="noopener noreferrer">
                     <FaGithub />
+                  </a>
+                )}
+                {image.other && (
+                  <a className="social-buttons-small" href={image.other} target="_blank" rel="noopener noreferrer">
+                    <FaLink />
                   </a>
                 )}
               </div>

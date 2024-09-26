@@ -35,6 +35,10 @@
   border-radius: 20px;
 }
 
+.shift-crop {
+  object-position: top; /* This will shift the image cropping upwards */
+}
+
 .display-header {
   margin-top: 10px;
   font-size: 24px;
