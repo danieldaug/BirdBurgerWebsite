@@ -34,9 +34,9 @@ const BlogPostDisplayer: React.FC<BlogPostDisplayerProps> = ({ posts }) => {
           <div className="blog-post-content">
             <h2>{post.title}</h2>
             <p>{post.description}</p>
-            <div key={index} className="dropdown-item" onClick={() => handleClick('/blog')}>
+            <button key={index} className="blog-view" onClick={() => handleClick('/blog')}>
             {post.view}
-          </div>
+          </button>
           </div>
         </div>
       ))}
