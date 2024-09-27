@@ -26,7 +26,7 @@ const productData = [
     },
     {
         imageUrl: wing_logo,
-        description: 'Expect more products soon...',
+        header: 'Expect more products soon...',
     },
   ];
 

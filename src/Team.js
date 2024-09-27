@@ -42,7 +42,7 @@ const teamData = [
     {
         imageUrl: AndersonProfile,
         description: 'Musician',
-        school: '',
+        school: 'Palomar College \'27',
         header: 'Kevin Anderson',
         ig: 'https://www.instagram.com/zizzerzazzerzuz4323/',
         other: 'https://linktr.ee/KevinAnd',
