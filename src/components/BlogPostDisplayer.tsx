@@ -8,6 +8,7 @@ interface BlogPost {
   title: string;
   description: string;
   view: string;
+  data?: string;
 }
 
 interface BlogPostDisplayerProps {
@@ -15,6 +16,11 @@ interface BlogPostDisplayerProps {
 }
 
 const BlogPostDisplayer: React.FC<BlogPostDisplayerProps> = ({ posts }) => {
+  
+  const handleClick = (link: string) => {
+    window.location.href = link;
+  };
+
   return (
     <div className="blog-post-container">
       {posts.map((post, index) => (
@@ -28,6 +34,9 @@ const BlogPostDisplayer: React.FC<BlogPostDisplayerProps> = ({ posts }) => {
           <div className="blog-post-content">
             <h2>{post.title}</h2>
             <p>{post.description}</p>
+            <div key={index} className="dropdown-item" onClick={() => handleClick('/blog')}>
+            {post.view}
+          </div>
           </div>
         </div>
       ))}
