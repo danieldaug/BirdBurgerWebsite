@@ -17,7 +17,10 @@ interface BlogPostDisplayerProps {
 
 const BlogPostDisplayer: React.FC<BlogPostDisplayerProps> = ({ posts }) => {
   
-  const handleClick = (link: string) => {
+  const handleClick = (link: string, post: BlogPost) => {
+    if (post.data){
+      localStorage.setItem('userData', JSON.stringify(post.data));
+    }
     window.location.href = link;
   };
 
@@ -34,7 +37,7 @@ const BlogPostDisplayer: React.FC<BlogPostDisplayerProps> = ({ posts }) => {
           <div className="blog-post-content">
             <h2>{post.title}</h2>
             <p>{post.description}</p>
-            <button key={index} className="blog-view" onClick={() => handleClick('/blog')}>
+            <button key={index} className="blog-view" onClick={() => handleClick('/blog', post)}>
             {post.view}
           </button>
           </div>

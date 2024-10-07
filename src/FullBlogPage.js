@@ -14,23 +14,39 @@ const menuItems = [
   ];
 
 const FullBlogPage = () => {
-    const location = useLocation();
 
-    useEffect(() => {
-    // Scroll to the anchor if there's a hash in the URL
-    if (location.hash) {
-        const element = document.getElementById(location.hash.substring(1));
-        if (element) {
-        element.scrollIntoView({ behavior: 'smooth' });
-        }
-    }
-    }, [location]);
+  const location = useLocation();
+
+  const data = JSON.parse(localStorage.getItem('userData'));
+  const params = new URLSearchParams(location.search);
+  const title = params.get('title');
+  const descriptions = params.get('descriptions');
+  const subtitles = params.get('subtitles');
+
+  useEffect(() => {
+  // Scroll to the anchor if there's a hash in the URL
+  if (location.hash) {
+      const element = document.getElementById(location.hash.substring(1));
+      if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+      }
+  }
+  }, [location]);
   return (
     <div>
         <Banner />
         <IconButtonDropdown menuItems={menuItems} />
         <header className="App-header">
-            <p>PlaceHolder</p>
+          <h1>{data.title}</h1>
+          {data.descriptions.map((description, index) => (
+            <div key={index}>
+              {/* Display subtitle if it exists for the current index */}
+              {index < data.subtitles.length && <h2>{data.subtitles[index]}</h2>}
+              
+              {/* Display the description */}
+              <p>{description}</p>
+            </div>
+          ))}
         </header>
     <div>
       <Footer logo={wing_logo}/>

@@ -19,7 +19,17 @@ body {
 
 h1{
   font-family: 'Playpen Sans', sans-serif;
-  font-size: 50px
+  font-size: 50px;
+}
+
+h2{
+  font-family: 'Playpen Sans', sans-serif;
+  font-size: 40px;
+}
+
+p{
+  font-family: 'Playpen Sans', sans-serif;
+  font-size: 24px;
 }
 
 .logo-container {
@@ -40,4 +50,9 @@ h1{
 .Slider {
   padding: 20px;
   text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;   
 }
