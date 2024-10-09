@@ -51,7 +51,9 @@ const FullBlogPage = () => {
               {description.map((subdescription, subIndex) => (
                 <p key={subIndex}>{subdescription}</p>
               ))}
-              {index < data.images.length && <img src={data.images[index]} alt={data.subtitles[index]} className="FullBlogImg"/>}
+              <div className="FullBlogImg">
+              {index < data.images.length && <img src={data.images[index]} alt={data.subtitles[index] } className="FullBlogImgElement"/>}
+              </div>
             </div>
           ))}
         </header>

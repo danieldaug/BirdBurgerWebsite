@@ -59,8 +59,11 @@ p{
 }
 
 .FullBlogImg {
-  max-width: 400px;
   align-items: center;
-  border-radius: 10%;
   text-align: center;
+}
+
+.FullBlogImgElement {
+  border-radius: 10%;
+  width: 400px;
 }

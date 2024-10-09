@@ -44,7 +44,7 @@ const blogItems = [
         'Get Ready to Tee Off!',
       ],
       images: [
-        DDIcon
+        DDIcon,
       ]
     },
   },
