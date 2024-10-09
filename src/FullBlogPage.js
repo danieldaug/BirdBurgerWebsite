@@ -22,6 +22,7 @@ const FullBlogPage = () => {
   const title = params.get('title');
   const descriptions = params.get('descriptions');
   const subtitles = params.get('subtitles');
+  const images = params.get('images');
 
   useEffect(() => {
   // Scroll to the anchor if there's a hash in the URL
@@ -37,14 +38,20 @@ const FullBlogPage = () => {
         <Banner />
         <IconButtonDropdown menuItems={menuItems} />
         <header className="App-header">
+          {/* Display the title at the top */}
           <h1>{data.title}</h1>
+
+          {/* Outer loop: iterate through descriptions */}
           {data.descriptions.map((description, index) => (
             <div key={index}>
               {/* Display subtitle if it exists for the current index */}
               {index < data.subtitles.length && <h2>{data.subtitles[index]}</h2>}
               
-              {/* Display the description */}
-              <p>{description}</p>
+              {/* Nested loop: iterate through subdescriptions (array of strings) */}
+              {description.map((subdescription, subIndex) => (
+                <p key={subIndex}>{subdescription}</p>
+              ))}
+              {index < data.images.length && <img src={data.images[index]} alt={data.subtitles[index]} className="FullBlogImg"/>}
             </div>
           ))}
         </header>
